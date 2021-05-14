@@ -68,7 +68,7 @@ const Home = () => {
   return (
     <div>
       <h1>
-        USER MANAGEMENT
+        USER MANAGEMENT!
       </h1>
       <div className={styles.container}>
       Token
