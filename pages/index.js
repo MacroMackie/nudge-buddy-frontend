@@ -9,7 +9,7 @@ const mutation = gql`
   mutation exampleMutation(
     $token: String!
     $name: String!
-    $age: String!
+    $age: Int!
   ) {
     createOrFetchAccount(
       token: $token
@@ -51,7 +51,7 @@ const Home = () => {
     client.rawRequest(mutation, {
       token,
       name,
-      age
+      age: parseInt(age, 10)
     }).then((data) => setResult(data))
   }, [
     token, name, age, setResult
