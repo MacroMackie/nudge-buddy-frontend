@@ -76,7 +76,7 @@ const Home = () => {
       Name
       <input value={name} onChange={e => setName(e.target.value)} />
       Age
-      <input value={name} onChange={e => setAge(e.target.value)} />
+      <input value={age} onChange={e => setAge(e.target.value)} />
       <button onClick={submitToServer}>create or update user</button>
       <div>
         result
